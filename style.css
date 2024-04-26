@@ -1,0 +1,96 @@
+::-webkit-scrollbar{
+	display: none;
+}
+
+body {
+	margin:0;
+	background: #F5F7FB;
+	overflow-x:hidden;
+}
+
+.races {
+	display:flex;
+	flex-wrap:nowrap;
+	justify-content: flex-start;
+	height: 100vh;
+}
+
+.races section {
+	flex-shrink:0;
+	margin:0;	
+	font-family: 'Playfair Display', serif;
+}
+
+.races .title {
+	overflow: hidden;
+}
+
+.races .title span{
+	display: inline-block;
+	transform: translateY(100%);
+}
+
+.container {
+	width:74vmin;
+	overflow: hidden;
+}
+
+.wrapper{
+	width: 100%;
+	display: flex;
+	animation: slide 16s infinite;
+}
+@keyframes slide{
+	0%{
+		transform: translateX(0);
+	}
+	25%{
+			transform: translateX(0);
+	}
+	35%{
+			transform: translateX(-100%);
+	}
+	45%{
+			transform: translateX(-100%);
+	}
+	55%{
+			transform: translateX(-200%);
+	}
+	75%{
+			transform: translateX(-200%);
+	}
+	85%{
+			transform: translateX(-100%);
+	}
+	90%{
+			transform: translateX(-100%);
+	}
+	100%{
+			transform: translateX(0);
+	}
+}
+
+img{
+	width: 100%;
+}
+
+span {
+  background-image: linear-gradient(yellow, yellow);
+  background-size: 0 100%;
+  transition: background-size 2s ease-in-out;
+  background-repeat: no-repeat;
+}
+
+.active {
+  background-size: 100% 100%;
+}
+
+#text-2 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#text-3 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
